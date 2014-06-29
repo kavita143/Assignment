@@ -63,12 +63,12 @@ public class SwingExample extends JFrame implements MouseListener,
 
 	public void mouseClicked(MouseEvent e) {
 		System.out.println("MouseClicked event");
-		mainPanel.setLocation(40, 40);
+		mainPanel.setLocation(e.getX(),e.getY());
 	}
 
 	public void mouseDragged(MouseEvent e) {
 		System.out.println("MouseDragged event");
-		mainPanel.setLocation(80, 80);
+		mainPanel.setLocation(e.getX(),e.getY());
 	}
 
 	public void mouseMoved(MouseEvent e) {
